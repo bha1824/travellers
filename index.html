@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      #zoom {
+        height: 300px;
+      }
+      .nav-link {
+        font-size: 20px;
+        font-weight: 400;
+      }
+      nav,
+      footer {
+        background: linear-gradient(to right, #00c6ff, #0072ff);
+        color: white;
+      }
+
+      .h {
+        border-bottom: 1px solid black;
+      }
+
+      .nav-link {
+        font-size: 20px;
+        font-weight: 400;
+      }
+    </style>
+    <title>index</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top mb-3">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img
+            src="img/logos.png"
+            class="img-fluid mx-auto"
+            height="40"
+            width="100"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link active h me-3 text-white"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active me-3 text-white" href="destination.html"
+                >Destination</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active me-3 text-white" href="about.html"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active me-3 text-white" href="events.html"
+                >Events</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active me-3 text-white" href="blog.html"
+                >Blog</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active me-3 text-white" href="contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section>
+      <div class="container mt-3 mb-3">
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="img/ice-mountains.jpg"
+                class="d-block w-100"
+                alt="snow-mountain-img"
+                style="height: 500px"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Canada</h5>
+                <p>
+                  glaciated mountain ranges, the high Andes, and the Engadine
+                  lake region
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/beach.jpg"
+                class="d-block w-100"
+                alt="beach-img"
+                style="height: 500px"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Maldives</h5>
+                <p>
+                  Explore the unscripted beauty of the Maldives from one of our
+                  luxury island resorts.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/sunset.jpg"
+                class="d-block w-100"
+                alt="sunset-img"
+                style="height: 500px"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Darjeeling</h5>
+                <p>
+                  The most popular spots for the stunning viewing of blossoms.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="container mt-5 mb-4">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="text-center animate__animated animate__backInLeft">
+              Welcome To Travel Time
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4"
+            data-aos="fade-up"
+          >
+            <a href="destination.html" style="text-decoration: none"
+              ><img
+                id="zoom"
+                src="img/destination.jpg"
+                class="img-thumbnail img-fluid mx-auto d-block"
+              />
+              <h4 class="text-dark" id="link" style="text-align: center">
+                DESTINATION
+              </h4></a
+            >
+          </div>
+
+          <div
+            class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4"
+            data-aos="fade-up"
+          >
+            <a href="blog.html" style="text-decoration: none"
+              ><img
+                id="zoom"
+                src="img/blog.jpg"
+                class="img-thumbnail img-fluid mx-auto d-block"
+              />
+              <h4 class="text-dark" id="link" style="text-align: center">
+                BLOG
+              </h4></a
+            >
+          </div>
+
+          <div
+            class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4"
+            data-aos="fade-up"
+          >
+            <a href="about.html" style="text-decoration: none"
+              ><img
+                id="zoom"
+                src="img/about.jpg"
+                class="img-thumbnail img-fluid mx-auto d-block"
+              />
+              <h4 class="text-dark" id="link" style="text-align: center">
+                ABOUT US
+              </h4></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="container mt-5 mb-5">
+        <div class="row">
+          <div class="col-12">
+            <h4
+              class="fw-semibold fs-2 text-center animate__animated animate__backInLeft"
+            >
+              A Travel Blog for the Independent Traveler
+            </h4>
+          </div>
+          <div
+            class="col-12 fs-4 animate__animated animate__fadeIn bg-light"
+            style="text-align: justify"
+          >
+            Within all of us lies a Wanderer. There is a beautiful, fascinating
+            world out there awaiting our exploration. The wonder it brings is
+            limitless. Wanderers Compass Travel Blog will awaken the wanderer
+            within you through storytelling, photography, destination info, and
+            travel tips from our decades of experience. Whether your first trip
+            or your 100th, no matter your budget. Wanderers Compass will provide
+            the inspiration and tools you need to create your own independent,
+            authentic, life-changing travel adventures.<br /><br />
+            <div class="container mt-5">
+              <h2 class="text-center mb-4">Watch Our Travel Highlights</h2>
+
+              <div class="video-container mb-3">
+                <iframe
+                  class="embed-responsive-item"
+                  src="img/blog-video.mp4"
+                  allowfullscreen
+                  height="500px"
+                  width="100%"
+                ></iframe>
+              </div>
+            </div>
+            Traveling independently allows individuals to explore destinations
+            on their own terms, providing the freedom to create personalized
+            itineraries and experiences. Unlike group tours, independent travel
+            encourages spontaneity, enabling travelers to delve deeper into
+            local cultures, try unique foods, and engage with residents. This
+            style of travel often involves navigating logistics such as
+            accommodations, transportation, and activities without the
+            assistance of a guide, fostering self-reliance and problem-solving
+            skills. While it can come with challenges, such as language barriers
+            or navigating unfamiliar places, the rewards of independence often
+            lead to more meaningful and memorable adventures. Ultimately,
+            independent travel promotes a sense of adventure and discovery,
+            allowing individuals to connect with the world in a way that aligns
+            with their interests and passions.
+          </div>
+        </div>
+      </div>
+
+      <div class="container bg-light pt-3 border rounded">
+        <div class="row">
+          <div class="col-lg-3 col-md-12 col-sm-12 col-12 mb-3">
+            <div class="row">
+              <div class="div">
+                <h1 class="text-center">
+                  <i class="fa-solid fa-map" data-aos="fade-down"></i>
+                </h1>
+              </div>
+              <div class="div"><h6 class="text-center">Destination</h6></div>
+              <div class="div">
+                <p class="text-center">
+                  Why safari happens almost everywhere in World
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-12 col-sm-12 col-12 mb-3">
+            <div class="row">
+              <div class="div">
+                <h1 class="text-center">
+                  <i class="fa-solid fa-signs-post" data-aos="fade-down"></i>
+                </h1>
+              </div>
+              <div class="div"><h6 class="text-center">Where To Go</h6></div>
+
+              <div class="div">
+                <p class="text-center">
+                  Explore International, Domestic, Mountains, Islands and more
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-12 col-sm-12 col-12 mb-3">
+            <div class="row">
+              <div class="div">
+                <h1 class="text-center">
+                  <i class="fa-solid fa-snowflake" data-aos="fade-down"></i>
+                </h1>
+              </div>
+              <div class="div"><h6 class="text-center">When To Go</h6></div>
+              <div class="div">
+                <p class="text-center">
+                  When is the best time to climb Mt. Everest or go on Manali
+                  Trip?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-12 col-sm-12 col-12 mb-3">
+            <div class="row">
+              <div class="div">
+                <h1 class="text-center">
+                  <i class="fa-solid fa-bed" data-aos="fade-down"></i>
+                </h1>
+              </div>
+              <div class="div"><h6 class="text-center">Where To Stay</h6></div>
+              <div class="div">
+                <p class="text-center">
+                  Unlock the Best Hotels in all over the world with Our
+                  Assistance
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container bg-light">
+        <div class="row">
+          <div class="col-12 fs-4 mb-3">
+            Independent travel also provides a unique opportunity for personal
+            growth and self-discovery. By stepping outside their comfort zones,
+            travelers can gain confidence, develop new skills, and cultivate a
+            sense of resilience. Whether it’s learning to navigate public
+            transport in a foreign city, negotiating prices at local markets, or
+            simply finding one’s way without a GPS, each experience contributes
+            to a deeper understanding of oneself and the world. Moreover,
+            independent travelers often find themselves forming connections with
+            fellow adventurers and locals, enriching their journey with shared
+            stories and insights. This freedom not only enhances the travel
+            experience but also fosters a greater appreciation for diversity,
+            encouraging a more nuanced perspective on global cultures and
+            lifestyles. Ultimately, independent travel is about forging one's
+            path, embracing the unknown, and creating lasting memories that
+            resonate long after the journey ends.
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 border h-100">
+            <h6 class="text-center text-white pt-3 pb-3">
+              © @2024 - Travellers Time All Rights Reserved
+            </h6>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  background: linear-gradient(to right, #f0f4c3, #e0e0e0);
+}
+.dest {
+  background-image: url("beach.jpg");
+}
